@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.DetailsActivity"
+        android:background="@color/colorPrimary">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/detail_Movieimg_cover"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_220dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/imgview3"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="@dimen/_150dp"
+                app:layout_constraintBottom_toBottomOf="@+id/detail_Movieimg_cover"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/gradient_bg"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/playfab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_play"
+                app:layout_constraintBottom_toBottomOf="@+id/detail_Movieimg_cover"
+                app:layout_constraintEnd_toEndOf="@+id/imgview3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/detail_Movieimg_cover" />
+
+            <ImageView
+                android:id="@+id/detail_Movie_img"
+                android:layout_width="@dimen/_125dp"
+                android:layout_height="@dimen/_175dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:scaleType="centerCrop"
+                android:transitionName="@string/animate_image"
+                app:layout_constraintBottom_toBottomOf="@+id/detail_Movieimg_cover"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_Movieimg_cover" />
+
+            <TextView
+                android:id="@+id/detail_Movie_title"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:text="title"
+                android:textColor="@android:color/background_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/detail_Movie_img"
+                app:layout_constraintTop_toBottomOf="@+id/detail_Movieimg_cover" />
+
+            <TextView
+                android:id="@+id/detail_Movie_desc"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:text="@string/sample_desc"
+                android:lineSpacingExtra="@dimen/_8dp"
+                android:textColor="@color/blue_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_Movie_img" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

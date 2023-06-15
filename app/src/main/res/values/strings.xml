@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Movie Stream</string>
+    <string name="trending_now">Trending Now</string>
+    <string name="popular_now">Popular Now</string>
+    <string name="watch_again">Watch it again</string>
+    <string name="guardians">Guardians of the galaxy</string>
+    <string name="spider_man">Spider man</string>
+    <string name="john_wick">John wick</string>
+    <string name="fast_furious">Fast and Furious X</string>
+    <string name="movie_title">movie_title</string>
+    <string name="image_url">ImageUrl</string>
+    <string name="cover_image_url">CoverImageUrl</string>
+    <string name="video_url">VideoUrl</string>
+    <string name="animate_image">AnimateImage</string>
+    <string name="sample_desc">During the credits, Michael gets Sharma framed for drug possession, leading to Sharmas arrest in Malaysia, where he is on a holiday. A few months later, Michael, no longer a rowdy, takes up football coaching for children, with one of his wards being the son of Daniel, who has made peace with Michael</string>
+
+</resources>
